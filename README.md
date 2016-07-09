@@ -20,10 +20,12 @@
   因为是采用的runLoop，所以不需要使用RunLoopCommonModes 的，直接传入HFRunLoopMode即可，默认：kCFRunLoopDefaultMode
 
    
-   使用
-    self.timer = [HFTimer timerWithTimeInterval:1 target:self selector:@selector()];
+   使用：
+    
+     self.timer = [HFTimer timerWithTimeInterval:1 target:self selector:@selector()];
     
     或者
+    
     self.timer = [HFTimer timerWithTimeInterval:1 block:^(HFTimer * _Nonnull timer) {
         
     }];
