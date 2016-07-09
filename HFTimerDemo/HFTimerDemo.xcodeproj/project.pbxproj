@@ -1,0 +1,628 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		82466E18059718C9104B61DF /* libPods-HFTimerDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B8C71FF18BB39FD36058842 /* libPods-HFTimerDemo.a */; };
+		A80B79CD1D3147CA006EC923 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A80B79CC1D3147CA006EC923 /* main.m */; };
+		A80B79D01D3147CA006EC923 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A80B79CF1D3147CA006EC923 /* AppDelegate.m */; };
+		A80B79D31D3147CA006EC923 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A80B79D21D3147CA006EC923 /* ViewController.m */; };
+		A80B79D61D3147CA006EC923 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A80B79D41D3147CA006EC923 /* Main.storyboard */; };
+		A80B79D81D3147CA006EC923 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A80B79D71D3147CA006EC923 /* Assets.xcassets */; };
+		A80B79DB1D3147CA006EC923 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A80B79D91D3147CA006EC923 /* LaunchScreen.storyboard */; };
+		A80B79E61D3147CA006EC923 /* HFTimerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A80B79E51D3147CA006EC923 /* HFTimerDemoTests.m */; };
+		A80B79F11D3147CA006EC923 /* HFTimerDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A80B79F01D3147CA006EC923 /* HFTimerDemoUITests.m */; };
+		A80B7A011D314849006EC923 /* HFTimerTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A80B79FF1D314849006EC923 /* HFTimerTestViewController.m */; };
+		A80B7A021D314849006EC923 /* HFTimerTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A80B7A001D314849006EC923 /* HFTimerTestViewController.xib */; };
+		A80B7A0B1D314B83006EC923 /* HFTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = A80B7A0A1D314B83006EC923 /* HFTimer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A80B79E21D3147CA006EC923 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A80B79C01D3147CA006EC923 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A80B79C71D3147CA006EC923;
+			remoteInfo = HFTimerDemo;
+		};
+		A80B79ED1D3147CA006EC923 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A80B79C01D3147CA006EC923 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A80B79C71D3147CA006EC923;
+			remoteInfo = HFTimerDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5B8C71FF18BB39FD36058842 /* libPods-HFTimerDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HFTimerDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A80B79C81D3147CA006EC923 /* HFTimerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HFTimerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A80B79CC1D3147CA006EC923 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A80B79CE1D3147CA006EC923 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A80B79CF1D3147CA006EC923 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A80B79D11D3147CA006EC923 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A80B79D21D3147CA006EC923 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A80B79D51D3147CA006EC923 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A80B79D71D3147CA006EC923 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A80B79DA1D3147CA006EC923 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A80B79DC1D3147CA006EC923 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A80B79E11D3147CA006EC923 /* HFTimerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HFTimerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A80B79E51D3147CA006EC923 /* HFTimerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HFTimerDemoTests.m; sourceTree = "<group>"; };
+		A80B79E71D3147CA006EC923 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A80B79EC1D3147CA006EC923 /* HFTimerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HFTimerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A80B79F01D3147CA006EC923 /* HFTimerDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HFTimerDemoUITests.m; sourceTree = "<group>"; };
+		A80B79F21D3147CA006EC923 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A80B79FE1D314849006EC923 /* HFTimerTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFTimerTestViewController.h; sourceTree = "<group>"; };
+		A80B79FF1D314849006EC923 /* HFTimerTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFTimerTestViewController.m; sourceTree = "<group>"; };
+		A80B7A001D314849006EC923 /* HFTimerTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HFTimerTestViewController.xib; sourceTree = "<group>"; };
+		A80B7A091D314B83006EC923 /* HFTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFTimer.h; sourceTree = "<group>"; };
+		A80B7A0A1D314B83006EC923 /* HFTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFTimer.m; sourceTree = "<group>"; };
+		C37EA6BC1BC5FD43CBA08B95 /* Pods-HFTimerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HFTimerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-HFTimerDemo/Pods-HFTimerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		E55042F6E773882606B8D3EC /* Pods-HFTimerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HFTimerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HFTimerDemo/Pods-HFTimerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A80B79C51D3147CA006EC923 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82466E18059718C9104B61DF /* libPods-HFTimerDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A80B79DE1D3147CA006EC923 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A80B79E91D3147CA006EC923 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		63047B53C020245D4AF86BC9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B8C71FF18BB39FD36058842 /* libPods-HFTimerDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A80B79BF1D3147CA006EC923 = {
+			isa = PBXGroup;
+			children = (
+				A80B79CA1D3147CA006EC923 /* HFTimerDemo */,
+				A80B79E41D3147CA006EC923 /* HFTimerDemoTests */,
+				A80B79EF1D3147CA006EC923 /* HFTimerDemoUITests */,
+				A80B79C91D3147CA006EC923 /* Products */,
+				E6D79DC8D5CE78A91599E8FB /* Pods */,
+				63047B53C020245D4AF86BC9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A80B79C91D3147CA006EC923 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A80B79C81D3147CA006EC923 /* HFTimerDemo.app */,
+				A80B79E11D3147CA006EC923 /* HFTimerDemoTests.xctest */,
+				A80B79EC1D3147CA006EC923 /* HFTimerDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A80B79CA1D3147CA006EC923 /* HFTimerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				A80B7A081D314B83006EC923 /* NSTimer */,
+				A80B79CE1D3147CA006EC923 /* AppDelegate.h */,
+				A80B79CF1D3147CA006EC923 /* AppDelegate.m */,
+				A80B79D11D3147CA006EC923 /* ViewController.h */,
+				A80B79D21D3147CA006EC923 /* ViewController.m */,
+				A80B79FE1D314849006EC923 /* HFTimerTestViewController.h */,
+				A80B79FF1D314849006EC923 /* HFTimerTestViewController.m */,
+				A80B7A001D314849006EC923 /* HFTimerTestViewController.xib */,
+				A80B79D41D3147CA006EC923 /* Main.storyboard */,
+				A80B79D71D3147CA006EC923 /* Assets.xcassets */,
+				A80B79D91D3147CA006EC923 /* LaunchScreen.storyboard */,
+				A80B79DC1D3147CA006EC923 /* Info.plist */,
+				A80B79CB1D3147CA006EC923 /* Supporting Files */,
+			);
+			path = HFTimerDemo;
+			sourceTree = "<group>";
+		};
+		A80B79CB1D3147CA006EC923 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A80B79CC1D3147CA006EC923 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A80B79E41D3147CA006EC923 /* HFTimerDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				A80B79E51D3147CA006EC923 /* HFTimerDemoTests.m */,
+				A80B79E71D3147CA006EC923 /* Info.plist */,
+			);
+			path = HFTimerDemoTests;
+			sourceTree = "<group>";
+		};
+		A80B79EF1D3147CA006EC923 /* HFTimerDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A80B79F01D3147CA006EC923 /* HFTimerDemoUITests.m */,
+				A80B79F21D3147CA006EC923 /* Info.plist */,
+			);
+			path = HFTimerDemoUITests;
+			sourceTree = "<group>";
+		};
+		A80B7A081D314B83006EC923 /* NSTimer */ = {
+			isa = PBXGroup;
+			children = (
+				A80B7A091D314B83006EC923 /* HFTimer.h */,
+				A80B7A0A1D314B83006EC923 /* HFTimer.m */,
+			);
+			name = NSTimer;
+			path = ../../NSTimer;
+			sourceTree = "<group>";
+		};
+		E6D79DC8D5CE78A91599E8FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E55042F6E773882606B8D3EC /* Pods-HFTimerDemo.debug.xcconfig */,
+				C37EA6BC1BC5FD43CBA08B95 /* Pods-HFTimerDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A80B79C71D3147CA006EC923 /* HFTimerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A80B79F51D3147CA006EC923 /* Build configuration list for PBXNativeTarget "HFTimerDemo" */;
+			buildPhases = (
+				EAA6417E04E3D041D519D94C /* Check Pods Manifest.lock */,
+				A80B79C41D3147CA006EC923 /* Sources */,
+				A80B79C51D3147CA006EC923 /* Frameworks */,
+				A80B79C61D3147CA006EC923 /* Resources */,
+				3B7F61898FB8C4A3C06FFE73 /* Embed Pods Frameworks */,
+				8C4CD315CDFAFB13052D382F /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HFTimerDemo;
+			productName = HFTimerDemo;
+			productReference = A80B79C81D3147CA006EC923 /* HFTimerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A80B79E01D3147CA006EC923 /* HFTimerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A80B79F81D3147CA006EC923 /* Build configuration list for PBXNativeTarget "HFTimerDemoTests" */;
+			buildPhases = (
+				A80B79DD1D3147CA006EC923 /* Sources */,
+				A80B79DE1D3147CA006EC923 /* Frameworks */,
+				A80B79DF1D3147CA006EC923 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A80B79E31D3147CA006EC923 /* PBXTargetDependency */,
+			);
+			name = HFTimerDemoTests;
+			productName = HFTimerDemoTests;
+			productReference = A80B79E11D3147CA006EC923 /* HFTimerDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A80B79EB1D3147CA006EC923 /* HFTimerDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A80B79FB1D3147CA006EC923 /* Build configuration list for PBXNativeTarget "HFTimerDemoUITests" */;
+			buildPhases = (
+				A80B79E81D3147CA006EC923 /* Sources */,
+				A80B79E91D3147CA006EC923 /* Frameworks */,
+				A80B79EA1D3147CA006EC923 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A80B79EE1D3147CA006EC923 /* PBXTargetDependency */,
+			);
+			name = HFTimerDemoUITests;
+			productName = HFTimerDemoUITests;
+			productReference = A80B79EC1D3147CA006EC923 /* HFTimerDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A80B79C01D3147CA006EC923 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = helfy;
+				TargetAttributes = {
+					A80B79C71D3147CA006EC923 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					A80B79E01D3147CA006EC923 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = A80B79C71D3147CA006EC923;
+					};
+					A80B79EB1D3147CA006EC923 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = A80B79C71D3147CA006EC923;
+					};
+				};
+			};
+			buildConfigurationList = A80B79C31D3147CA006EC923 /* Build configuration list for PBXProject "HFTimerDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A80B79BF1D3147CA006EC923;
+			productRefGroup = A80B79C91D3147CA006EC923 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A80B79C71D3147CA006EC923 /* HFTimerDemo */,
+				A80B79E01D3147CA006EC923 /* HFTimerDemoTests */,
+				A80B79EB1D3147CA006EC923 /* HFTimerDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A80B79C61D3147CA006EC923 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A80B7A021D314849006EC923 /* HFTimerTestViewController.xib in Resources */,
+				A80B79DB1D3147CA006EC923 /* LaunchScreen.storyboard in Resources */,
+				A80B79D81D3147CA006EC923 /* Assets.xcassets in Resources */,
+				A80B79D61D3147CA006EC923 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A80B79DF1D3147CA006EC923 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A80B79EA1D3147CA006EC923 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B7F61898FB8C4A3C06FFE73 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HFTimerDemo/Pods-HFTimerDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C4CD315CDFAFB13052D382F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HFTimerDemo/Pods-HFTimerDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAA6417E04E3D041D519D94C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A80B79C41D3147CA006EC923 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A80B7A011D314849006EC923 /* HFTimerTestViewController.m in Sources */,
+				A80B79D31D3147CA006EC923 /* ViewController.m in Sources */,
+				A80B79D01D3147CA006EC923 /* AppDelegate.m in Sources */,
+				A80B7A0B1D314B83006EC923 /* HFTimer.m in Sources */,
+				A80B79CD1D3147CA006EC923 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A80B79DD1D3147CA006EC923 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A80B79E61D3147CA006EC923 /* HFTimerDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A80B79E81D3147CA006EC923 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A80B79F11D3147CA006EC923 /* HFTimerDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A80B79E31D3147CA006EC923 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A80B79C71D3147CA006EC923 /* HFTimerDemo */;
+			targetProxy = A80B79E21D3147CA006EC923 /* PBXContainerItemProxy */;
+		};
+		A80B79EE1D3147CA006EC923 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A80B79C71D3147CA006EC923 /* HFTimerDemo */;
+			targetProxy = A80B79ED1D3147CA006EC923 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A80B79D41D3147CA006EC923 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A80B79D51D3147CA006EC923 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A80B79D91D3147CA006EC923 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A80B79DA1D3147CA006EC923 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A80B79F31D3147CA006EC923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A80B79F41D3147CA006EC923 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A80B79F61D3147CA006EC923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E55042F6E773882606B8D3EC /* Pods-HFTimerDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HFTimerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.helfy.HFTimerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
+			};
+			name = Debug;
+		};
+		A80B79F71D3147CA006EC923 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C37EA6BC1BC5FD43CBA08B95 /* Pods-HFTimerDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HFTimerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.helfy.HFTimerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
+			};
+			name = Release;
+		};
+		A80B79F91D3147CA006EC923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HFTimerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.helfy.HFTimerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HFTimerDemo.app/HFTimerDemo";
+			};
+			name = Debug;
+		};
+		A80B79FA1D3147CA006EC923 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HFTimerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.helfy.HFTimerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HFTimerDemo.app/HFTimerDemo";
+			};
+			name = Release;
+		};
+		A80B79FC1D3147CA006EC923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HFTimerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.helfy.HFTimerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HFTimerDemo;
+			};
+			name = Debug;
+		};
+		A80B79FD1D3147CA006EC923 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HFTimerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.helfy.HFTimerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HFTimerDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A80B79C31D3147CA006EC923 /* Build configuration list for PBXProject "HFTimerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A80B79F31D3147CA006EC923 /* Debug */,
+				A80B79F41D3147CA006EC923 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A80B79F51D3147CA006EC923 /* Build configuration list for PBXNativeTarget "HFTimerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A80B79F61D3147CA006EC923 /* Debug */,
+				A80B79F71D3147CA006EC923 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A80B79F81D3147CA006EC923 /* Build configuration list for PBXNativeTarget "HFTimerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A80B79F91D3147CA006EC923 /* Debug */,
+				A80B79FA1D3147CA006EC923 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A80B79FB1D3147CA006EC923 /* Build configuration list for PBXNativeTarget "HFTimerDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A80B79FC1D3147CA006EC923 /* Debug */,
+				A80B79FD1D3147CA006EC923 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A80B79C01D3147CA006EC923 /* Project object */;
+}
