@@ -18,7 +18,7 @@
 		A80B79F11D3147CA006EC923 /* HFTimerDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A80B79F01D3147CA006EC923 /* HFTimerDemoUITests.m */; };
 		A80B7A011D314849006EC923 /* HFTimerTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A80B79FF1D314849006EC923 /* HFTimerTestViewController.m */; };
 		A80B7A021D314849006EC923 /* HFTimerTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A80B7A001D314849006EC923 /* HFTimerTestViewController.xib */; };
-		A80B7A0B1D314B83006EC923 /* HFTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = A80B7A0A1D314B83006EC923 /* HFTimer.m */; };
+		A80B7A0F1D31510F006EC923 /* HFTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = A80B7A0E1D31510F006EC923 /* HFTimer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,8 +59,8 @@
 		A80B79FE1D314849006EC923 /* HFTimerTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFTimerTestViewController.h; sourceTree = "<group>"; };
 		A80B79FF1D314849006EC923 /* HFTimerTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFTimerTestViewController.m; sourceTree = "<group>"; };
 		A80B7A001D314849006EC923 /* HFTimerTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HFTimerTestViewController.xib; sourceTree = "<group>"; };
-		A80B7A091D314B83006EC923 /* HFTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFTimer.h; sourceTree = "<group>"; };
-		A80B7A0A1D314B83006EC923 /* HFTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFTimer.m; sourceTree = "<group>"; };
+		A80B7A0D1D31510F006EC923 /* HFTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFTimer.h; sourceTree = "<group>"; };
+		A80B7A0E1D31510F006EC923 /* HFTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFTimer.m; sourceTree = "<group>"; };
 		C37EA6BC1BC5FD43CBA08B95 /* Pods-HFTimerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HFTimerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-HFTimerDemo/Pods-HFTimerDemo.release.xcconfig"; sourceTree = "<group>"; };
 		E55042F6E773882606B8D3EC /* Pods-HFTimerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HFTimerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HFTimerDemo/Pods-HFTimerDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -124,7 +124,7 @@
 		A80B79CA1D3147CA006EC923 /* HFTimerDemo */ = {
 			isa = PBXGroup;
 			children = (
-				A80B7A081D314B83006EC923 /* NSTimer */,
+				A80B7A0C1D31510F006EC923 /* HFTimer */,
 				A80B79CE1D3147CA006EC923 /* AppDelegate.h */,
 				A80B79CF1D3147CA006EC923 /* AppDelegate.m */,
 				A80B79D11D3147CA006EC923 /* ViewController.h */,
@@ -167,14 +167,14 @@
 			path = HFTimerDemoUITests;
 			sourceTree = "<group>";
 		};
-		A80B7A081D314B83006EC923 /* NSTimer */ = {
+		A80B7A0C1D31510F006EC923 /* HFTimer */ = {
 			isa = PBXGroup;
 			children = (
-				A80B7A091D314B83006EC923 /* HFTimer.h */,
-				A80B7A0A1D314B83006EC923 /* HFTimer.m */,
+				A80B7A0D1D31510F006EC923 /* HFTimer.h */,
+				A80B7A0E1D31510F006EC923 /* HFTimer.m */,
 			);
-			name = NSTimer;
-			path = ../../NSTimer;
+			name = HFTimer;
+			path = ../../HFTimer;
 			sourceTree = "<group>";
 		};
 		E6D79DC8D5CE78A91599E8FB /* Pods */ = {
@@ -371,7 +371,7 @@
 				A80B7A011D314849006EC923 /* HFTimerTestViewController.m in Sources */,
 				A80B79D31D3147CA006EC923 /* ViewController.m in Sources */,
 				A80B79D01D3147CA006EC923 /* AppDelegate.m in Sources */,
-				A80B7A0B1D314B83006EC923 /* HFTimer.m in Sources */,
+				A80B7A0F1D31510F006EC923 /* HFTimer.m in Sources */,
 				A80B79CD1D3147CA006EC923 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
