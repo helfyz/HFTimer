@@ -30,7 +30,7 @@
   
      不支持 repeats ,timer多数需求都是需要重复，不重复的情况。为什么不用performSelector: withObject: afterDelay:?
   
-  使用HFTimer 需要注意的一点：必须要有对象持有它。否则将不会工作，当时做这个的初衷便是targer和timer 的相互持有造成的问题，如不持有，为什么不用NSTimer?
+  使用HFTimer 需要注意的一点：必须要有对象持有它。否则将不会工作，当时做这个的初衷便是targer和timer 的相互持有造成的问题，如不持有，可以考虑 HFPrettyTimer(https://github.com/helfyz/HFPrettyTimer)?
   
   因为是采用的runLoop，所以需要使用RunLoopCommonModes 的，直接传入HFRunLoopMode即可，默认：kCFRunLoopDefaultMode
 
@@ -47,5 +47,6 @@
     
     
     
-     
+    喜欢 NSTimer的同学。。基于NSTimer 的自动释放
+    HFPrettyTimer (https://github.com/helfyz/HFPrettyTimer)
    
