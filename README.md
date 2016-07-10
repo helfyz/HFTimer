@@ -10,11 +10,12 @@
   我看到的做法基本是，
   
       如果在VC里面，在disappear里面进行销毁， 但是，这样做又会引发其他问题。因为pop 和 push 都会触发这个方法。
-         然后又需要在appear里面重新开始，更具本身的需求，可能还需要加入启动的条件判断
+      然后又需要在appear里面重新开始，更具本身的需求，可能还需要加入启动的条件判断
          
        如果是在View里面，情况和VC差不多。只是方法不同
        
-       最后，就是在model里面(比如一个model需要定时去获取服务器数据等)。这情况就尴尬了。。因为它没有类似VC和View 的方法。只能手动去销毁。
+       最后，就是在model里面(比如一个model需要定时去获取服务器数据等)。这情况就尴尬了。。因为它没有类似VC和View 的方法。
+       只能手动去销毁。
  
  所以当时就萌生了写一个会自动销毁timer的想法。。然后周末下午无事。就写了一个试试。。就是现在的HFTimer，
  当然，里面的可能会有很多的坑。毕竟这是一时头脑发热做出来的。而且用的时间也不多，SO...欢迎提bug
@@ -27,7 +28,7 @@
   
      支持block
   
-     不支持 repeats ,timer多数需求都是需要重复，不重复的情况。为什么不用[target performSelector: withObject: afterDelay:]?
+     不支持 repeats ,timer多数需求都是需要重复，不重复的情况。为什么不用performSelector: withObject: afterDelay:?
   
   使用HFTimer 需要注意的一点：必须要有对象持有它。否则将不会工作，当时做这个的初衷便是targer和timer 的相互持有造成的问题，如不持有，为什么不用NSTimer?
   
@@ -36,7 +37,7 @@
    
    使用：
     
-     self.timer = [HFTimer timerWithTimeInterval:1 target:self selector:@selector()];
+     self.timer = [HFTimer timerWithTimeInterval:1 target:self selector:@selector(XXX)];
     
     或者
     
