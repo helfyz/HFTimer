@@ -11,7 +11,6 @@
 
 @implementation HFTimer
 {
-    NSTimer *timer;
     CFRunLoopTimerRef _runLoopTimerRef;
     CFRunLoopTimerContext _runLoopTtimerContext;
     CFRunLoopRef _runLoop;
@@ -28,19 +27,14 @@
 }
 
 + (HFTimer *_Nonnull)timerWithTimeInterval:(NSTimeInterval)ti target:(id _Nonnull)aTarget selector:(SEL _Nonnull)aSelector userInfo:(nullable id)userInfo {
-    
     return [self timerWithTimeInterval:ti target:aTarget selector:aSelector userInfo:userInfo runLoopMode:HFRunLoopModeDefaultMode];
-    
 }
 
 + (HFTimer *_Nonnull)timerWithTimeInterval:(NSTimeInterval)ti target:(id _Nonnull)aTarget selector:(SEL _Nonnull)aSelector userInfo:(nullable id)userInfo runLoopMode:(HFRunLoopMode)mode {
-    
     HFTimer *timer = [[HFTimer alloc] initWithInterval:ti target:aTarget selector:aSelector userInfo:userInfo runLoopMode:mode];
     [timer startRunLoopTimer];
-    
     return timer;
 }
-
 
 #pragma mark -- block 回调方式
 + (HFTimer * _Nonnull) timerWithTimeInterval:(NSTimeInterval)ti block: (void (^ _Nonnull)(HFTimer *_Nonnull timer))block{
@@ -64,11 +58,8 @@
     
     self = [super init];
     if(self) {
-        
         _timerBlock = block;
-        
         [self setupWithInterval:interval userInfo:userInfo runLoopMode:mode];
-        
     }
     return self;
     
@@ -81,10 +72,8 @@
     
     self = [super init];
     if(self) {
-        
         _target = target;
         _selector = selector;
-        
         [self setupWithInterval:interval userInfo:userInfo runLoopMode:mode];
     }
     return self;
@@ -117,8 +106,8 @@
 - (void) timerResopne {
 
     if(_target && _selector) {
-        void (*hfMessageSend)(id self, SEL _cmd) = (void*)objc_msgSend;
-        hfMessageSend(_target,_selector);
+        void (*hfMessageSend)(id self, SEL _cmd, id _ddservice) = (void*)objc_msgSend;
+        hfMessageSend(_target,_selector,self);
     }
     else {
         !_timerBlock?:_timerBlock(self);
@@ -140,16 +129,21 @@ void hfTimerCallback(CFRunLoopTimerRef timer, void *info) {
 }
 
 - (void)invalidate {
-    if(_runLoopTimerRef)
-    {
+    if(_runLoopTimerRef) {
+        CFRunLoopTimerInvalidate(_runLoopTimerRef);
         CFRunLoopRemoveTimer(_runLoop?:CFRunLoopGetCurrent(), _runLoopTimerRef, _runLoopMode?:kCFRunLoopDefaultMode);
         CFRelease(_runLoopTimerRef);
         _runLoopTimerRef = nil;
+        
     }
     _runLoopTtimerContext.info = nil;
 }
 
 - (BOOL)isValid{
-    return _runLoopTimerRef?YES:NO;
+    
+    if(_runLoopTimerRef) {
+        return CFRunLoopTimerIsValid(_runLoopTimerRef);
+    }
+    return NO;
 }
 @end

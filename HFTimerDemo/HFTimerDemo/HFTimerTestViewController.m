@@ -32,6 +32,7 @@
 
 - (void)numberAddForLabel
 {
+
     self.numberLabel.text = @([self.numberLabel.text integerValue] + 1).stringValue;
 }
 
