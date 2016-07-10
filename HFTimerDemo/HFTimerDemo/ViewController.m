@@ -43,7 +43,7 @@
 - (void)setupData
 {
 
-    HFTableViewSectionModel *sectionObj = [self sectionModelWithTitle:@"HFTimer"];
+    HFTableViewSectionModel *sectionObj = [self sectionModelWithTitle:@"HFTierm"];
     [sectionObj addCellModel:[self cellModelForTitle:@"测试HFTimer" pushTo:@"HFTimerTestViewController"]];
     
     [self.hft_tableViewManger setupDataSourceModels:@[sectionObj] isAddmore:NO];

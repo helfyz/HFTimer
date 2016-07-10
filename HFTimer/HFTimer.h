@@ -31,4 +31,6 @@ typedef NS_ENUM(NSInteger,HFRunLoopMode) {
 @property (nonatomic, readonly, getter=isValid) BOOL valid;
 @property (nonatomic, nullable, readonly, retain) id userInfo;
 
+
+- (void)fire;
 @end

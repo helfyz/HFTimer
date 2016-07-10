@@ -104,14 +104,17 @@
 }
 
 - (void) timerResopne {
-
-    if(_target && _selector) {
-        void (*hfMessageSend)(id self, SEL _cmd, id _ddservice) = (void*)objc_msgSend;
-        hfMessageSend(_target,_selector,self);
+    
+    @autoreleasepool {
+        if(_target && _selector) {
+            void (*hfMessageSend)(id self, SEL _cmd, id _ddservice) = (void*)objc_msgSend;
+            hfMessageSend(_target,_selector,self);
+        }
+        else {
+            !_timerBlock?:_timerBlock(self);
+        }
     }
-    else {
-        !_timerBlock?:_timerBlock(self);
-    }
+  
 }
 
 void hfTimerCallback(CFRunLoopTimerRef timer, void *info) {
@@ -123,15 +126,18 @@ void hfTimerCallback(CFRunLoopTimerRef timer, void *info) {
 - (void)startRunLoopTimer {
     [self invalidate];
     _runLoopTtimerContext.info = (__bridge void *)(self);
-    _runLoopTimerRef = CFRunLoopTimerCreate(CFAllocatorGetDefault(), CFAbsoluteTimeGetCurrent(), _timeInterval?:0.02, 0, 0, hfTimerCallback, &_runLoopTtimerContext);
+    _runLoopTimerRef = CFRunLoopTimerCreate(CFAllocatorGetDefault(), CFAbsoluteTimeGetCurrent()+_timeInterval, _timeInterval?:0.02, 0, 0, hfTimerCallback, &_runLoopTtimerContext);
     CFRunLoopAddTimer(_runLoop?:CFRunLoopGetCurrent(), _runLoopTimerRef, _runLoopMode?:kCFRunLoopDefaultMode);
     
+}
+
+- (void)fire {
+    [self timerResopne];
 }
 
 - (void)invalidate {
     if(_runLoopTimerRef) {
         CFRunLoopTimerInvalidate(_runLoopTimerRef);
-        CFRunLoopRemoveTimer(_runLoop?:CFRunLoopGetCurrent(), _runLoopTimerRef, _runLoopMode?:kCFRunLoopDefaultMode);
         CFRelease(_runLoopTimerRef);
         _runLoopTimerRef = nil;
         
